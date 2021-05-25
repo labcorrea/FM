@@ -125,6 +125,6 @@ double getPoint(int node, double dx) {
 
 // Create mxArray for holding an integer scalar
 mxArray * myCreateIntScalar() {
-		int dimsOfAScalar[2] = {1,1};
+		mwSize dimsOfAScalar[2] = {1,1};
 		return mxCreateNumericArray(1,dimsOfAScalar,mxINT32_CLASS,mxREAL);
 }
